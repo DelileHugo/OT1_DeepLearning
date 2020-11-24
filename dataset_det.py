@@ -50,7 +50,7 @@ class Balls_CF_Detection(Dataset):
         # But may affect performance
         DOWN_SAMPLE = 4
         
-        return img[:,::DOWN_SAMPLE,::DOWN_SAMPLE], p, bb
+        return img[:,::DOWN_SAMPLE,::DOWN_SAMPLE]/255.0, p, bb
 
     # Return the dataset size
     def __len__(self):
