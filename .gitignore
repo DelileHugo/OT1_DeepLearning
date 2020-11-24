@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Data used by the neural network
+data/
+
+# VisualStudio code env
+.vscode
