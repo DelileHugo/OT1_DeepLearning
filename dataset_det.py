@@ -48,7 +48,7 @@ class Balls_CF_Detection(Dataset):
         
         # You can change this to 2,4 ..etc if you want to train more quickly
         # But may affect performance
-        DOWN_SAMPLE = 2
+        DOWN_SAMPLE = 1
         
         return img[:,::DOWN_SAMPLE,::DOWN_SAMPLE]/255.0, p, bb
 
